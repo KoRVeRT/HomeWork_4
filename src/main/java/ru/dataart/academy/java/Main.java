@@ -8,7 +8,7 @@ public class Main {
             System.out.println("Reverse integer works: " + reverseInteger.reverse(1346547));
             System.out.println("Reverse integer works for big negative value: " + reverseInteger.reverse(-2147483648));
             System.out.println("Reverse integer works for big positive value: " + reverseInteger.reverse(2147483647));
-        } catch (NumberReverseException e) {
+        } catch (IntegerOverflowException e) {
             System.out.printf("%s: %s%n", e.getClass().getSimpleName(), e.getMessage());
         }
     }
